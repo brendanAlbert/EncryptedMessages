@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">EncryptedMessages</string>
+    <string name="label_original">Original</string>
+    <string name="hint_original">Type a String to encode</string>
+    <string name="label_encrypted">Encrypted</string>
+    <string name="label_decrypted">Decrypted</string>
+    <string name="button_aes">AES</string>
+    <string name="button_rsa1">RSA1</string>
+    <string name="button_rsa2">RSA2</string>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="balbert.edu.orangecoastcollege.cs273.encryptedmessages.MainActivity">
+
+    <TextView
+        android:id="@+id/label_original"
+        style="@style/LabelStyle"
+        android:minWidth="120dp"
+        android:text="@string/label_original" />
+
+    <EditText
+        android:id="@+id/string_original"
+        style="@style/InputStyle"
+        android:layout_toRightOf="@+id/label_original"
+        android:layout_alignBottom="@+id/label_original"
+        android:layout_alignParentRight="true"
+        android:hint="@string/hint_original"/>
+
+    <TextView
+        android:id="@+id/label_encrypted"
+        style="@style/LabelStyle"
+        android:layout_marginTop="200dp"
+        android:layout_below="@+id/label_original"
+        android:layout_alignLeft="@+id/label_original"
+        android:layout_alignRight="@+id/label_original"
+        android:text="@string/label_encrypted" />
+
+    <TextView
+        android:id="@+id/string_encrypted"
+        style="@style/CenteredTextStyle"
+        android:layout_toRightOf="@+id/label_encrypted"
+        android:layout_alignBottom="@+id/label_encrypted"
+        android:layout_alignRight="@+id/string_original" />
+
+    <TextView
+        android:id="@+id/label_decrypted"
+        style="@style/LabelStyle"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/label_encrypted"
+        android:layout_alignLeft="@+id/label_original"
+        android:layout_alignRight="@+id/label_original"
+        android:text="@string/label_decrypted"/>
+
+    <TextView
+        android:id="@+id/string_decrypted"
+        style="@style/CenteredTextStyle"
+        android:layout_toRightOf="@+id/label_decrypted"
+        android:layout_alignBottom="@+id/label_decrypted"
+        android:layout_alignRight="@+id/string_original" />
+
+    <Button
+        android:id="@+id/button_aes"
+        style="@style/ButtonStyle"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/string_decrypted"
+        android:text="@string/button_aes"
+        android:onClick="encryptAndDecryptAES"/>
+
+    <Button
+        android:id="@+id/button_rsa1"
+        style="@style/ButtonStyle"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/string_decrypted"
+        android:layout_centerInParent="true"
+        android:text="@string/button_rsa1"
+        android:onClick="encryptAndDecryptRSA1"/>
+
+    <Button
+        android:id="@+id/button_rsa2"
+        style="@style/ButtonStyle"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/string_decrypted"
+        android:layout_alignParentRight="true"
+        android:text="@string/button_rsa2"
+        android:onClick="encryptAndDecryptRSA2"/>
+
+</RelativeLayout>
